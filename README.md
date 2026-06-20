@@ -55,7 +55,7 @@ For more information about the app, visit the Play Store listing.
 
 **Jamaal Butt**  
 Pediatric Surgeon & Digital Health Architect  
-University of Child Health Sciences, The Children’s Hospital Lahore  
+Independent Developer  
 
 📧 **Contact:** jamaalbutt@gmail.com
 
