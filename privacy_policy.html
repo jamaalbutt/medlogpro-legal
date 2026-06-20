@@ -1,89 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - MedLog Pro</title>
+    <meta charset="UTF-8" />
+    <title>Privacy Policy – MedLog Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Privacy Policy for MedLog Pro clinical logbook application." />
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        .container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2980b9; margin-top: 30px; }
-        h3 { color: #34495e; }
-        p, li { margin-bottom: 10px; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #7f8c8d; text-align: center; }
-        .legal-section { margin-bottom: 40px; }
+        :root {
+            --bg: #f7f7f9;
+            --card-bg: #ffffff;
+            --text: #222222;
+            --muted: #555555;
+            --accent: #0056b3;
+            --border: #e0e0e0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px 16px 40px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            padding: 24px 20px 28px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        h1, h2 {
+            margin-top: 0;
+            font-weight: 600;
+            color: #111111;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0.25rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            margin-top: 1.6rem;
+            margin-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.25rem;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 1.2rem;
+        }
+
+        ul {
+            margin: 0.4rem 0 0.4rem 1.2rem;
+        }
+
+        li {
+            margin: 0.25rem 0;
+        }
     </style>
 </head>
 <body>
-    <div style="text-align:center; margin-top:20px;">
+
+<!-- Horizontal Logo Banner -->
+<div style="display:flex; align-items:center; justify-content:center; margin-top:20px;">
     <img src="https://raw.githubusercontent.com/jamaalbutt/medlogpro-legal/main/logo_app.png"
          alt="MedLog Pro Logo"
-         style="width:120px; height:auto; border-radius:12px;">
-    <h1 style="margin-top:10px;">MedLog Pro</h1>
+         style="width:70px; height:auto; border-radius:10px; margin-right:12px;">
+    <h1 style="margin:0; font-size:2rem;">MedLog Pro</h1>
 </div>
 
-    <div class="container">
-        <h1>MedLog Pro - Legal Documentation</h1>
-        <p><strong>Last Updated:</strong> 11 June 2026</p>
+<div class="page">
+    <div class="card">
 
-        <section class="legal-section">
-            <h2>Privacy Policy</h2>
-            <p>MedLog Pro is a professional clinical logbook application. This policy explains how we handle data to support the training and documentation needs of healthcare providers.</p>
+        <h1>Privacy Policy</h1>
 
-            <h3>1. Information We Collect</h3>
-            <p><strong>1.1 Patient Information (Sensitive PHI)</strong></p>
-            <ul>
-                <li>Clinical Data: Diagnosis, procedures, outcomes, and operative notes.</li>
-                <li>Demographics: Age and gender.</li>
-                <li>Identifiers: Patient names or registration numbers (Anonymization strongly encouraged).</li>
-                <li>Media: Clinical images, investigation reports, or photographs uploaded by the user.</li>
-            </ul>
-
-            <p><strong>1.2 Professional User Profile Data</strong></p>
-            <ul>
-                <li>Full Name and Email Address.</li>
-                <li>Professional Details: Institution, Designation, Discipline/Specialty.</li>
-                <li>Registration: PMDC / Medical Registration Number and Qualifications.</li>
-                <li>Account Status: User role and Pro status.</li>
-            </ul>
-
-            <h3>2. How We Use the Data</h3>
-            <ul>
-                <li>Maintaining your clinical logbook and professional portfolio.</li>
-                <li>Facilitating the supervisor review/approval workflow.</li>
-                <li>Generating Portfolio PDFs and CSV exports.</li>
-                <li>Processing Pro features via Google Play.</li>
-            </ul>
-
-            <h3>3. Data Storage and Security</h3>
-            <ul>
-                <li><strong>Storage:</strong> We use Google Firebase with encryption in transit and at rest.</li>
-                <li><strong>Access Control:</strong> Only you and your nominated supervisor can view your clinical cases.</li>
-                <li><strong>No Third-Party Sales:</strong> We never sell or share your data with advertisers.</li>
-            </ul>
-
-            <h3>4. Data Deletion</h3>
-            <p>Users may permanently delete their account and all associated cloud data via the in-app settings. Once deleted, data is purged and cannot be recovered.</p>
-        </section>
-
-        <hr>
-
-        <section class="legal-section">
-            <h2>End User License Agreement (EULA)</h2>
-            <h3>1. Purpose of the Application</h3>
-            <p>MedLog Pro is a clinical logbook for documenting cases, procedures, and training. It is NOT a substitute for institutional Electronic Medical Records (EMR).</p>
-
-            <h3>2. User Responsibility for Consent</h3>
-            <p>You are solely responsible for obtaining informed consent from patients (or guardians) before entering data or images. You are strongly encouraged to use initials or anonymized identifiers instead of full patient names.</p>
-
-            <h3>3. Compliance With Institutional Policies</h3>
-            <p>You are responsible for ensuring that the use of MedLog Pro is permitted within your organization.</p>
-        </section>
-
-        <div class="footer">
-            <p>Contact: Jamaal Butt | jamaalbutt@gmail.com</p>
+        <div class="meta">
+            <p><strong>Last Updated:</strong> 11 June 2026</p>
+            <p><strong>App Name:</strong> MedLog Pro</p>
+            <p><strong>Developer:</strong> Jamaal Butt (Solo Developer)</p>
+            <p><strong>Affiliation:</strong> University of Child Health Sciences, The Children’s Hospital Lahore</p>
+            <p><strong>Contact Email:</strong> <a href="mailto:jamaalbutt@gmail.com">jamaalbutt@gmail.com</a></p>
         </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            MedLog Pro is a clinical logbook application designed for use by medical professionals, including trainees,
+            residents, and consultants. The app is intended exclusively for healthcare providers and not for children or
+            general public use.
+        </p>
+        <p>
+            This Privacy Policy explains how MedLog Pro collects, uses, stores, and protects personal and sensitive patient
+            information entered by authorized users for the purpose of maintaining clinical training logbooks.
+        </p>
+        <p>By using MedLog Pro, you agree to the practices described in this policy.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>MedLog Pro collects the following categories of data only when entered by the user:</p>
+
+        <h3>2.1 Patient Information (Sensitive Data)</h3>
+        <ul>
+            <li>Patient demographics (age, gender, identifiers entered by the user)</li>
+            <li>Clinical diagnosis and disease information</li>
+            <li>Treatment details, procedures performed, and clinical notes</li>
+            <li>Photographs of investigations, reports, or clinical findings</li>
+            <li>Case summaries and follow‑up notes</li>
+        </ul>
+
+        <h3>2.2 User Information</h3>
+        <ul>
+            <li>Email address used for authentication (Google Sign‑In or email/password)</li>
+            <li>User role (trainee, resident, consultant, supervisor)</li>
+            <li>Activity logs (cases added, edited, approved)</li>
+        </ul>
+
+        <h3>2.3 Device Information</h3>
+        <ul>
+            <li>Basic device metadata (Android version, device model)</li>
+            <li>Crash logs (if enabled by device settings)</li>
+        </ul>
+
+        <p><strong>MedLog Pro does NOT collect:</strong></p>
+        <ul>
+            <li>Location data</li>
+            <li>Contacts</li>
+            <li>SMS</li>
+            <li>Microphone or camera data (except when manually uploading images)</li>
+            <li>Advertising identifiers</li>
+        </ul>
+
+        <h2>3. How We Use the Data</h2>
+        <p>The data collected is used solely for clinical training and documentation, including:</p>
+        <ul>
+            <li>Maintaining a digital logbook of clinical cases</li>
+            <li>Tracking trainee progress</li>
+            <li>Allowing supervisors to review and approve cases</li>
+            <li>Supporting academic and training requirements</li>
+            <li>Secure storage and retrieval of clinical documentation</li>
+        </ul>
+        <p>No data is used for advertising, marketing, or commercial profiling.</p>
+
+        <h2>4. Legal Basis for Processing</h2>
+        <p>Data is processed under:</p>
+        <ul>
+            <li>Legitimate clinical and educational use</li>
+            <li>User consent when entering patient data</li>
+            <li>Training requirements of affiliated institutions</li>
+        </ul>
+        <p>
+            Users are responsible for ensuring that patient data is entered in compliance with their hospital’s privacy
+            and confidentiality policies.
+        </p>
+
+        <h2>5. Data Storage and Security</h2>
+        <p>MedLog Pro uses Firebase Firestore and Firebase Storage for secure cloud storage.</p>
+
+        <h3>Security Measures</h3>
+        <ul>
+            <li>Data encrypted in transit and at rest</li>
+            <li>Role‑based access control</li>
+            <li>Authentication required for all access</li>
+            <li>No public access to patient data</li>
+            <li>Audit logs maintained for case activity</li>
+        </ul>
+
+        <h3>Firebase Services Used</h3>
+        <ul>
+            <li>Firebase Authentication</li>
+            <li>Firebase Firestore</li>
+            <li>Firebase Storage</li>
+        </ul>
+
+        <p>Firebase Analytics is NOT used. No advertising SDKs are integrated.</p>
+
+        <h2>6. Data Sharing</h2>
+        <p>MedLog Pro does not share patient data with third parties except:</p>
+        <ul>
+            <li>Firebase (cloud service provider)</li>
+            <li>Authorized supervisors or consultants within the workflow</li>
+        </ul>
+        <p>We do not sell, rent, or disclose data to advertisers or external organizations.</p>
+
+        <h2>7. Data Retention</h2>
+        <ul>
+            <li>Data is retained as long as the user account remains active.</li>
+            <li>Users may delete individual cases at any time.</li>
+            <li>Account deletion permanently removes all associated data.</li>
+        </ul>
+
+        <h2>8. User Rights</h2>
+        <p>Users may:</p>
+        <ul>
+            <li>Request account deletion</li>
+            <li>Request deletion of specific cases</li>
+            <li>Request correction of inaccurate data</li>
+            <li>Export their logbook data (if implemented)</li>
+        </ul>
+        <p>Requests can be made via email: <a href="mailto:jamaalbutt@gmail.com">jamaalbutt@gmail.com</a></p>
+
+        <h2>9. Children’s Privacy</h2>
+        <p>
+            MedLog Pro is not intended for children and should only be used by licensed healthcare professionals.
+            The app does not target or collect data from minors as users.
+        </p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>
+            This Privacy Policy may be updated periodically. The “Last Updated” date will always reflect the most recent
+            version.
+        </p>
+
+        <h2>11. Contact Information</h2>
+        <p>
+            For questions or concerns regarding this Privacy Policy, contact:<br>
+            <strong>Jamaal Butt</strong><br>
+            Email: <a href="mailto:jamaalbutt@gmail.com">jamaalbutt@gmail.com</a>
+        </p>
+
     </div>
+</div>
+
 </body>
 </html>
