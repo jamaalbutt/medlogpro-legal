@@ -1,54 +1,60 @@
-# MedLog Pro 🩺
-**Professional Clinical Logbook & Portfolio Management System**
+# MedLog Pro 🩺  
+### **Official Legal Documentation Repository**
 
-MedLog Pro is a comprehensive Android application designed for healthcare professionals, surgical trainees, and medical students to document their clinical journey, manage surgical logs, and generate professional portfolios for accreditation and training requirements.
+This repository hosts the official legal documents for **MedLog Pro**, a professional clinical logbook and portfolio management application designed for healthcare professionals, surgical trainees, and medical students.
 
----
-
-## 🚀 Key Features
-
-### 📋 Clinical Logbook
-- **Comprehensive Case Entry:** Document diagnoses, procedures, anesthesia details, and outcomes with a streamlined UI.
-- **Media Management:** Securely attach clinical photographs, investigation reports, and videos to specific cases (with built-in patient consent reminders).
-- **Document Scanning:** Integrated ML-powered document scanner to digitize paper records instantly.
-
-### 🎓 Professional Portfolio
-- **Automated Generation:** Generate professional PDF portfolios and CSV exports of your clinical activity.
-- **Supervisor Workflow:** Nominate supervisors to review and digitally approve your logged cases.
-- **Analytics:** Visualize your clinical exposure with integrated charts (powered by Vico).
-
-### 🛡️ Security & Privacy
-- **Biometric Security:** Secure your sensitive clinical data with Fingerprint or Face ID.
-- **Cloud Sync:** Encrypted data synchronization across devices using Firebase.
-- **Privacy-First:** Built-in EULA and Privacy Policy ensuring compliance with institutional standards.
-
-### 💎 Premium Tiers
-- **Free:** Essential logging for students.
-- **Standard & Pro:** Extended limits for media uploads, unlimited case entries, and advanced export features.
+These documents are publicly accessible and compliant with Google Play requirements.
 
 ---
 
-## 🛠️ Technical Stack
-- **Language:** 100% Kotlin
-- **UI:** Jetpack Compose (Modern Declarative UI)
-- **Database:** Room (Local Persistence) & Firestore (Cloud Sync)
-- **Authentication:** Firebase Auth (Email/Google Sign-In)
-- **Storage:** Firebase Storage (Media hosting)
-- **Architecture:** MVVM (Model-View-ViewModel)
-- **Dependency Management:** Version Catalog (libs.versions.toml)
+## 📄 **Available Legal Documents**
+
+- **[Privacy Policy](https://jamaalbutt.github.io/medlogpro-legal/privacy_policy.html)**  
+- **[End User License Agreement (EULA)](https://jamaalbutt.github.io/medlogpro-legal/eula.html)**  
+
+Each document is published via **GitHub Pages** and formatted for readability on both mobile and desktop.
 
 ---
 
-## 📦 Installation & Setup
-1. Clone the repository.
-2. Add your `google-services.json` to the `app/` directory.
-3. Build using Android Studio (Ladybug or newer).
-4. Ensure you have a valid Firebase project with Firestore and Storage enabled.
+## 🧭 Purpose of This Repository
+
+This repository exists solely to:
+
+- Host legal documents required for Google Play Store listing  
+- Provide a stable, permanent, publicly accessible URL  
+- Maintain version control for updates to legal text  
+- Ensure transparency and compliance with institutional and regulatory standards  
+
+No application source code or installation instructions are included here.
 
 ---
 
-## ⚖️ Legal & Privacy
-This application handles Sensitive Personal Health Information (PHI). Users are responsible for obtaining informed patient consent and adhering to their institution's privacy policies.
+## 🛡️ About MedLog Pro
 
-**Developer:** Jamaal Butt
-**Contact:** jamaalbutt@hotmail.com
+**MedLog Pro** is a secure, privacy‑focused clinical logbook app that enables medical trainees and clinicians to:
+
+- Log patient cases and procedures  
+- Attach clinical media (with consent)  
+- Generate professional portfolios  
+- Track training progress  
+- Sync data securely via Firebase  
+
+For more information about the app, visit the Play Store listing.
+
+---
+
+## 👨‍⚕️ Developer
+
+**Jamaal Butt**  
+Pediatric Surgeon & Digital Health Architect  
+University of Child Health Sciences, The Children’s Hospital Lahore  
+
+📧 **Contact:** jamaalbutt@gmail.com
+
+---
+
+## 🔒 Disclaimer
+
+This repository contains **legal documents only**.  
+No patient data, clinical records, or app source code is stored here.
+
