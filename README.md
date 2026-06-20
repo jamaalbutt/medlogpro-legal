@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jamaalbutt/medlogpro-legal/main/logo.png" 
+       alt="MedLog Pro Logo" 
+       width="120" 
+       style="border-radius:12px;">
+  <h1>MedLog Pro</h1>
+</p>
+
 # MedLog Pro 🩺  
 ### **Official Legal Documentation Repository**
 
