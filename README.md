@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jamaalbutt/medlogpro-legal/main/logo.png" 
+  <img src="https://raw.githubusercontent.com/jamaalbutt/medlogpro-legal/main/logo_app.png" 
        alt="MedLog Pro Logo" 
        width="120" 
        style="border-radius:12px;">
