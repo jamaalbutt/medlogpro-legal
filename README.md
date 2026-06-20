@@ -1,15 +1,12 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/jamaalbutt/medlogpro-legal/main/logo_app.png" 
        alt="MedLog Pro Logo" 
-       width="70" 
-       style="vertical-align: middle; border-radius:10px; margin-right:10px;">
-  <span style="font-size:2rem; font-weight:700; vertical-align: middle;">
-    MedLog Pro
-  </span>
+       width="120" 
+       style="border-radius:12px;">
+  <h1>MedLog Pro</h1>
 </p>
 
 
-# MedLog Pro 🩺  
 ### **Official Legal Documentation Repository**
 
 This repository hosts the official legal documents for **MedLog Pro**, a professional clinical logbook and portfolio management application designed for healthcare professionals, surgical trainees, and medical students.
