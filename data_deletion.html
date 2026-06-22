@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,26 +10,30 @@
             line-height: 1.6;
             margin: 20px;
             max-width: 900px;
+            color: #333;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #2c3e50;
         }
         .section {
             margin-bottom: 30px;
         }
+        ul {
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- Horizontal Logo Banner -->
-<div style="display:flex; align-items:center; justify-content:center; margin-top:20px;">
+
+<!-- Horizontal Logo Banner -->
+<div style="display:flex; align-items:center; margin-top:20px; border-bottom: 2px solid #ecf0f1; padding-bottom: 20px; margin-bottom: 20px;">
     <img src="https://raw.githubusercontent.com/jamaalbutt/medlogpro-legal/main/logo_app.png"
          alt="MedLog Pro Logo"
          style="width:70px; height:auto; border-radius:10px; margin-right:12px;">
-    <h1 style="margin:0; font-size:2rem;">MedLog Pro</h1>
+    <h1 style="margin:0; font-size:2rem;">MedLog Pro – Account & Data Deletion</h1>
 </div>
 
-<h1>MedLog Pro – Account & Data Deletion</h1>
-<p>Last updated: June 2026</p>
+<p><em>Last updated: June 2026</em></p>
 
 <p>
 MedLog Pro is committed to protecting user privacy and ensuring full transparency regarding how your data is handled. 
@@ -39,7 +42,7 @@ This page explains how users can delete their account, remove individual case en
 
 <div class="section">
     <h2>1. Delete Individual Case Entries (Without Deleting Account)</h2>
-    <p>You can delete any case entry you have created without deleting your account. To delete a case:</p>
+    <p>You can delete any case entry you have created without deleting your entire account. To delete a case:</p>
     <ul>
         <li>Open the MedLog Pro app.</li>
         <li>Navigate to the <strong>Cases</strong> screen.</li>
@@ -54,23 +57,33 @@ This page explains how users can delete their account, remove individual case en
     <h2>2. Delete Your Entire Account & All Associated Data</h2>
     <p>You may delete your MedLog Pro account at any time. This will permanently remove:</p>
     <ul>
-        <li>Your user account</li>
-        <li>All logged cases</li>
-        <li>Uploaded images and documents</li>
+        <li>Your user account credentials</li>
+        <li>All logged cases and clinical logs</li>
+        <li>Uploaded images and medical documents</li>
         <li>Notes, tags, and metadata</li>
     </ul>
 
-    <h3>How to delete your account:</h3>
+    <h3>How to request account deletion:</h3>
+    
+    <p><strong>Option 1: Inside the App (Immediate Deletion)</strong></p>
     <ul>
         <li>Open the MedLog Pro app.</li>
-        <li>Go to <strong>"Profile" Tab form navigation bar</strong>.</li>
-        <li>Select <strong>"Delete Account & All Data" at the bottom of the page</strong>.</li>
+        <li>Go to the <strong>"Profile" Tab</strong> from the navigation bar.</li>
+        <li>Select <strong>"Delete Account & All Data"</strong> at the bottom of the page.</li>
         <li>Confirm the deletion request.</li>
+    </ul>
+
+    <p><strong>Option 2: Web/Email Request (Manual Processing)</strong></p>
+    <p>If you have uninstalled the app or cannot access your account, you can request manual deletion by contacting us directly via email at <strong>apexclinicaltools@gmail.com</strong>.</p>
+    <ul>
+        <li>Please send the email from the address registered to your MedLog Pro account.</li>
+        <li>Use the subject line: <strong>Account Deletion Request</strong>.</li>
+        <li>To protect your privacy, we will verify your identity via email before permanently wiping your data.</li>
     </ul>
 
     <p>
     Once confirmed, your account and all associated data are permanently deleted from our servers. 
-    This process is immediate and irreversible.
+    This process is irreversible.
     </p>
 </div>
 
@@ -78,23 +91,23 @@ This page explains how users can delete their account, remove individual case en
     <h2>3. What Data Is Deleted?</h2>
     <p>When you delete your account, the following data is permanently removed:</p>
     <ul>
-        <li>Account credentials (email, authentication ID)</li>
-        <li>All case entries</li>
-        <li>Uploaded images and documents</li>
-        <li>Notes, tags, and logs</li>
-        <li>App usage data linked to your account</li>
+        <li>Account credentials (email, Firebase authentication ID)</li>
+        <li>All user-generated case entries</li>
+        <li>Uploaded images, diagrams, and documents</li>
+        <li>Notes, tags, and custom logs</li>
+        <li>App usage telemetry explicitly linked to your account</li>
     </ul>
 </div>
 
 <div class="section">
     <h2>4. What Data Is Retained?</h2>
     <p>MedLog Pro does <strong>not</strong> retain any personally identifiable data after account deletion.</p>
-    <p>However, for security and fraud prevention, Firebase may retain anonymized technical logs for a short period (e.g., crash logs or device identifiers). These logs cannot be used to identify you.</p>
+    <p>However, for technical security and fraud prevention, Firebase may retain anonymized backend technical logs for a short period (such as crash analytics or device identifiers). These logs are entirely aggregated and cannot be used to identify you.</p>
 </div>
 
 <div class="section">
     <h2>5. How Long Does Deletion Take?</h2>
-    <p>Account and data deletion is processed <strong>immediately</strong> once you confirm the deletion inside the app.</p>
+    <p>Account and data deletion is processed <strong>immediately</strong> once you confirm the deletion inside the app. For email requests, please allow up to <strong>7 business days</strong> for identity verification and manual processing.</p>
 </div>
 
 <div class="section">
