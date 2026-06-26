@@ -20,6 +20,7 @@ These documents are publicly accessible and compliant with Google Play requireme
 - **[Privacy Policy](https://jamaalbutt.github.io/medlogpro-legal/privacy_policy.html)**  
 - **[End User License Agreement (EULA)](https://jamaalbutt.github.io/medlogpro-legal/eula.html)**
 - **[Account & Data Deletion Instructions](https://jamaalbutt.github.io/medlogpro-legal/data_deletion.html)**
+- **[Help & Support](https://jamaalbutt.github.io/medlogpro-legal/help.html)**
 
 Each document is published via **GitHub Pages** and formatted for readability on both mobile and desktop views.
 
