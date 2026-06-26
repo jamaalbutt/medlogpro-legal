@@ -1,421 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedLog Pro | Comprehensive Documentation & Help Center</title>
+    <meta charset="UTF-8" />
+    <title>Help & Support – MedLog Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Help and support documentation for MedLog Pro clinical logbook application." />
     <style>
         :root {
-            --primary-color: #2196F3;
-            --secondary-color: #1976D2;
-            --accent-color: #FF9800;
-            --text-color: #2C3E50;
-            --light-text: #7F8C8D;
-            --bg-color: #F4F7F9;
-            --card-bg: #FFFFFF;
-            --border-color: #DCDDE1;
-            --success-color: #4CAF50;
-            --info-color: #00BCD4;
+            --bg: #f7f7f9;
+            --card-bg: #ffffff;
+            --text: #222222;
+            --muted: #555555;
+            --accent: #0056b3;
+            --border: #e0e0e0;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.7;
-            color: var(--text-color);
-            background-color: var(--bg-color);
             margin: 0;
             padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
         }
 
-        header {
-            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px 16px 40px;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: -40px auto 40px;
-            padding: 0 20px;
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            padding: 24px 20px 28px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
         }
 
-        .nav-anchor {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
-        }
-
-        .anchor-link {
-            background: var(--card-bg);
-            padding: 8px 16px;
-            border-radius: 20px;
-            text-decoration: none;
-            color: var(--secondary-color);
+        h1, h2 {
+            margin-top: 0;
             font-weight: 600;
-            font-size: 14px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
+            color: #111111;
         }
 
-        .anchor-link:hover {
-            transform: translateY(-2px);
-            background: var(--secondary-color);
-            color: white;
-        }
-
-        .section {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border-left: 5px solid var(--primary-color);
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0.25rem;
         }
 
         h2 {
-            color: var(--secondary-color);
-            font-size: 24px;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            font-size: 1.1rem;
+            margin-top: 1.6rem;
+            margin-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.25rem;
         }
 
-        h3 {
-            color: var(--primary-color);
-            font-size: 18px;
-            margin-top: 25px;
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin-bottom: 1.2rem;
         }
 
-        .faq-item {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #F0F0F0;
+        ul {
+            margin: 0.4rem 0 0.4rem 1.2rem;
         }
 
-        .faq-item:last-child { border-bottom: none; }
-
-        .faq-question {
-            font-weight: 700;
-            color: var(--text-color);
-            font-size: 17px;
-            margin-bottom: 10px;
-            display: block;
+        li {
+            margin: 0.25rem 0;
         }
 
-        .faq-answer {
-            color: var(--light-text);
-            font-size: 15px;
+        a {
+            color: var(--accent);
+            text-decoration: none;
         }
 
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 800;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-            letter-spacing: 0.5px;
-        }
-
-        .badge-pro { background: #FFF3E0; color: #E67E22; border: 1px solid #FFE0B2; }
-        .badge-sync { background: #E3F2FD; color: #2980B9; border: 1px solid #BBDEFB; }
-        .badge-security { background: #E8F5E9; color: #27AE60; border: 1px solid #C8E6C9; }
-
-        .step-list {
-            padding-left: 20px;
-            margin-top: 10px;
-        }
-
-        .step-list li {
-            margin-bottom: 12px;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            font-size: 14px;
-        }
-
-        .comparison-table th, .comparison-table td {
-            text-align: left;
-            padding: 12px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .comparison-table th {
-            background-color: #F8F9FA;
-            color: var(--secondary-color);
-        }
-
-        .pro-highlight {
-            background-color: #FFF9C4;
-            font-weight: bold;
-        }
-
-        .module-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .module-card {
-            background: #F8F9FA;
-            padding: 20px;
-            border-radius: 12px;
-            border: 1px solid #EEE;
-        }
-
-        .module-card h4 {
-            margin: 0 0 10px 0;
-            color: var(--secondary-color);
-        }
-
-        footer {
-            text-align: center;
-            padding: 60px 20px;
-            color: var(--light-text);
-            font-size: 14px;
-            background: white;
-            border-top: 1px solid #EEE;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .logo-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            margin-right: 15px;
-        }
-
-        @media (max-width: 768px) {
-            .section { padding: 25px; }
-            .container { margin-top: -20px; }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="logo-container">
-        <img src="https://raw.githubusercontent.com/jamaalbutt/medlogpro-legal/main/logo_app.png" alt="MedLog Pro Logo" class="logo-img">
-        <h1 style="margin:0; font-size: 2.5rem; letter-spacing: -1px;">MedLog Pro</h1>
-    </div>
-    <p style="font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 10px auto;">The complete digital ecosystem for surgical training, clinical audit, and professional portfolio management.</p>
-</header>
-
-<div class="container">
-
-    <div class="nav-anchor">
-        <a href="#onboarding" class="anchor-link">Identity & Setup</a>
-        <a href="#logbook" class="anchor-link">Case Logging</a>
-        <a href="#templates" class="anchor-link">Templates</a>
-        <a href="#supervisor" class="anchor-link">Supervision</a>
-        <a href="#analytics" class="anchor-link">Analytics</a>
-        <a href="#portfolio" class="anchor-link">Portfolio & Export</a>
-        <a href="#cloud" class="anchor-link">Cloud & Security</a>
-        <a href="#billing" class="anchor-link">Tiers</a>
-    </div>
-
-    <!-- Onboarding Section -->
-    <div class="section" id="onboarding">
-        <h2>🔑 1. Identity & Account Management</h2>
-        <div class="faq-item">
-            <span class="faq-question">Defining Your Clinical Role</span>
-            <div class="faq-answer">
-                <p>MedLog Pro is built around two distinct clinical personas:</p>
-                <ul class="step-list">
-                    <li><strong>Trainee / Resident:</strong> The primary logging role. Enables procedural tracking, logbook generation, and verification requests.</li>
-                    <li><strong>Supervisor / Consultant:</strong> The oversight role. Focuses on reviewing trainee logs, auditing departmental metrics, and providing digital sign-offs.</li>
-                </ul>
-                <p><em>Tip: If you need to switch roles, navigate to More > Change User Role. Note that this action clears local unsynced drafts for security purposes.</em></p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <span class="badge badge-security">Security</span>
-            <span class="faq-question">Biometric Security & Privacy</span>
-            <div class="faq-answer">
-                <p>Protecting sensitive clinical data is paramount. You can enable <strong>Biometric Unlock</strong> (Fingerprint or FaceID) via the More tab. This ensures that even if your device is unlocked, your logbook remains inaccessible to unauthorized users.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Core Logbook Section -->
-    <div class="section" id="logbook">
-        <h2>📋 2. The Core Logbook Module</h2>
-        <div class="module-grid">
-            <div class="module-card">
-                <h4>Surgical Cases</h4>
-                <p>Detailed tracking of operative duration, findings, anesthesia types (ASA score), and specific role (Lead Surgeon, Assistant, Observer).</p>
-            </div>
-            <div class="module-card">
-                <h4>Medical Cases</h4>
-                <p>Optimized for clinical rounds. Track investigations, differential diagnoses, and management responses.</p>
-            </div>
-            <div class="module-card">
-                <h4>Academic/Research</h4>
-                <p>Log presentations, research papers, and workshops to maintain a complete professional record.</p>
-            </div>
-        </div>
-        <div class="faq-item" style="margin-top: 20px;">
-            <span class="faq-question">What is the "Clavien-Dindo" classification?</span>
-            <div class="faq-answer">
-                <p>We integrate the international standard for grading surgical complications. When logging a case outcome, you can select Grades I through V to maintain an audit-ready complications register.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Templates Section -->
-    <div class="section" id="templates">
-        <h2>⚡ 3. High-Efficiency Templates</h2>
-        <div class="faq-item">
-            <span class="faq-question">Streamlining Repetitive Documentation</span>
-            <div class="faq-answer">
-                <p>Surgical documentation often involves repetitive descriptions of operative steps. The <strong>Template Management</strong> module allows you to:</p>
-                <ol class="step-list">
-                    <li>Pre-define "Steps Performed" and "Post-op Plans" for common diagnoses (e.g., Laparoscopic Cholecystectomy).</li>
-                    <li>When adding a case, selecting that diagnosis will automatically trigger a "Template Found" notification.</li>
-                    <li>Applying the template instantly populates the fields, which you can then customize for the specific patient.</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-
-    <!-- Supervisor Section -->
-    <div class="section" id="supervisor">
-        <h2>🤝 4. Supervisor Verification Workflow</h2>
-        <div class="faq-item">
-            <span class="faq-question">Digital Sign-off Ecosystem</span>
-            <div class="faq-answer">
-                <p>The verification loop ensures institutional validity:</p>
-                <ul class="step-list">
-                    <li><strong>Selection:</strong> During case entry, select your supervisor from the cloud-synced list.</li>
-                    <li><strong>Sync:</strong> Once you upload your case to the cloud, it appears in your supervisor's "Pending Review" list.</li>
-                    <li><strong>Review:</strong> The supervisor reviews your logs and media attachments.</li>
-                    <li><strong>Status:</strong> Cases change from "Pending" to "Verified" (Green Badge), locked for further editing to maintain audit integrity.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Analytics Section -->
-    <div class="section" id="analytics">
-        <h2>📊 5. Analytics & Clinical Insights</h2>
-        <div class="faq-item">
-            <span class="faq-question">Data-Driven Career Growth</span>
-            <div class="faq-answer">
-                <p>Our analytics engine (powered by the Vico Charting library) provides:</p>
-                <ul class="step-list">
-                    <li><strong>Volume Metrics:</strong> Monthly trends of surgical activity.</li>
-                    <li><strong>Complexity Distribution:</strong> Visual breakdown of procedure categories.</li>
-                    <li><strong>Outcome Audits:</strong> Instant success-vs-complication ratios, vital for annual appraisals.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Section -->
-    <div class="section" id="portfolio">
-        <h2>📂 6. Professional Portfolio & Exports</h2>
-        <div class="faq-item">
-            <span class="faq-question">Generating Audit-Ready Records</span>
-            <div class="faq-answer">
-                <p>The <strong>Manage Portfolio</strong> screen is your career hub:</p>
-                <ul class="step-list">
-                    <li><strong>PDF Generator:</strong> Creates a formal, branded logbook document ready for printing or email submission to medical boards.</li>
-                    <li><strong>CSV Export:</strong> Provides a raw data dump in spreadsheet format for custom institutional research or advanced data analysis.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Cloud & Security Section -->
-    <div class="section" id="cloud">
-        <h2>☁️ 7. Cloud Architecture & Data Sovereignty</h2>
-        <div class="faq-item">
-            <span class="badge badge-sync">Sync Engine</span>
-            <span class="faq-question">Offline-First Design</span>
-            <div class="faq-answer">
-                <p>MedLog Pro uses a <strong>Local-First architecture</strong>. Your logs are stored in a secure encrypted SQLite database (Room DB) on your phone. You control when to sync to the cloud, ensuring privacy during sensitive operations.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <span class="faq-question">Cloud Recovery</span>
-            <div class="faq-answer">
-                <p>If you lose your phone, our <strong>Thorough Restore</strong> feature pulls your entire history, including custom templates and media links, back onto your new device in seconds.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Billing Section -->
-    <div class="section" id="billing">
-        <h2>💎 8. Subscription Tiers & Quotas</h2>
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>Free Tier</th>
-                    <th>Standard</th>
-                    <th class="pro-highlight">Pro (Recommended)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Monthly Case Limit</td>
-                    <td>15 Cases</td>
-                    <td>30 Cases</td>
-                    <td class="pro-highlight">Unlimited</td>
-                </tr>
-                <tr>
-                    <td>Media Storage (Photos)</td>
-                    <td>1 per case</td>
-                    <td>3 per case</td>
-                    <td class="pro-highlight">5 per case</td>
-                </tr>
-                <tr>
-                    <td>Video Attachments</td>
-                    <td>None</td>
-                    <td>1 Short Clip</td>
-                    <td class="pro-highlight">2 HD Clips</td>
-                </tr>
-                <tr>
-                    <td>Portfolio Export</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td class="pro-highlight">Yes + Priority Support</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Contact Support -->
-    <div class="section" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); color: white; border: none;">
-        <h2 style="color: white;">🆘 Direct Clinical Support</h2>
-        <p>Because this tool is built by a surgeon, we understand the urgency of clinical documentation. For high-priority technical issues or institutional onboarding:</p>
-        <p><strong>Primary Support:</strong> jamaalbutt@gmail.com</p>
-        <p><strong>WhatsApp Support:</strong> +92 333 4505125</p>
-    </div>
-
+<!-- Logo Banner -->
+<div style="display:flex; align-items:center; justify-content:center; margin-top:20px;">
+    <img src="https://raw.githubusercontent.com/jamaalbutt/medlogpro-legal/main/logo_app.png"
+         alt="MedLog Pro Logo"
+         style="width:70px; height:auto; border-radius:10px; margin-right:12px;">
+    <h1 style="margin:0; font-size:2rem;">MedLog Pro</h1>
 </div>
 
-<footer>
-    <p>&copy; 2024 Apex Clinical Tools. MedLog Pro Version 1.2 (Stable Build).</p>
-    <p>Designed and Developed by Dr. Jamaal Butt | Pediatric Surgeon & Digital Health Architect</p>
-</footer>
+<div class="page">
+    <div class="card">
+
+        <h1>Help & Support Center</h1>
+        <p class="subtitle">Guides, troubleshooting, and documentation for MedLog Pro</p>
+
+        <h2>1. Getting Started</h2>
+        <p>MedLog Pro is designed for medical trainees, residents, and consultants to document clinical cases and maintain a digital logbook. After installing the app:</p>
+        <ul>
+            <li>Sign in using Google or email/password.</li>
+            <li>Select your role (trainee, resident, consultant, supervisor).</li>
+            <li>Begin adding patient cases from the dashboard.</li>
+        </ul>
+
+        <h2>2. Adding a New Case</h2>
+        <p>To add a clinical case:</p>
+        <ul>
+            <li>Tap the <strong>Add Case</strong> button.</li>
+            <li>Enter patient demographics (avoid unnecessary identifiers).</li>
+            <li>Record diagnosis, procedures, and clinical notes.</li>
+            <li>Upload investigation images or reports (with consent).</li>
+            <li>Save the case to your logbook.</li>
+        </ul>
+
+        <h2>3. Supervisor Review & Approval</h2>
+        <p>Supervisors can review and approve cases submitted by trainees:</p>
+        <ul>
+            <li>Trainees submit cases for approval.</li>
+            <li>Supervisors receive them in their review panel.</li>
+            <li>Cases can be approved, returned for correction, or commented on.</li>
+        </ul>
+
+        <h2>4. Editing or Deleting Cases</h2>
+        <p>You may edit or delete cases at any time:</p>
+        <ul>
+            <li>Open the case from your logbook.</li>
+            <li>Select <strong>Edit</strong> to update details.</li>
+            <li>Select <strong>Delete</strong> to permanently remove it.</li>
+        </ul>
+        <p>Deleted cases cannot be recovered.</p>
+
+        <h2>5. Data Security</h2>
+        <p>MedLog Pro uses Firebase Authentication, Firestore, and Storage for secure cloud-based data handling.</p>
+        <ul>
+            <li>All data is encrypted in transit and at rest.</li>
+            <li>No data is shared with advertisers.</li>
+            <li>No analytics or tracking SDKs are used.</li>
+        </ul>
+
+        <h2>6. Troubleshooting</h2>
+        <ul>
+            <li><strong>App not syncing:</strong> Check your internet connection and sign-in status.</li>
+            <li><strong>Images not uploading:</strong> Ensure storage permissions are granted.</li>
+            <li><strong>Case not saving:</strong> Ensure all required fields are filled.</li>
+            <li><strong>Supervisor not visible:</strong> Confirm your institution’s supervisor mapping.</li>
+        </ul>
+
+        <h2>7. Contact Support</h2>
+        <p>If you need help, have questions, or want to report an issue, contact:</p>
+        <p><strong>Email:</strong> <a href="mailto:jamaalbutt@gmail.com">jamaalbutt@gmail.com</a></p>
+
+    </div>
+</div>
 
 </body>
 </html>
