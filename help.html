@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedLog Pro | Help Center & Documentation</title>
+    <style>
+        :root {
+            --primary-color: #2196F3;
+            --secondary-color: #1976D2;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .search-container {
+            margin-top: -30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .search-bar {
+            width: 80%;
+            max-width: 500px;
+            padding: 15px 25px;
+            border-radius: 30px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            font-size: 16px;
+            outline: none;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #444;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #666;
+            padding-left: 5px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .badge-pro { background: #fff3e0; color: #ff9800; border: 1px solid #ff9800; }
+        .badge-sync { background: #e3f2fd; color: #2196f3; border: 1px solid #2196f3; }
+
+        .step-list {
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 10px; }
+            .section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MedLog Pro Help Center</h1>
+    <p>Comprehensive Guides and Tutorials for Surgical Trainees & Consultants</p>
+</header>
+
+<div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search for a topic (e.g. Syncing, CSV, Pro Tier)...">
+</div>
+
+<div class="container">
+
+    <!-- Getting Started -->
+    <div class="section">
+        <h2>🚀 Getting Started</h2>
+        <div class="faq-item">
+            <span class="faq-question">1. Initial Account Setup</span>
+            <div class="faq-answer">
+                <p>After downloading the app, register using your institutional email or Google account. Choosing your <strong>Role</strong> is the most critical step:</p>
+                <ul class="step-list">
+                    <li><strong>Trainee:</strong> Allows you to log cases, track your progress, and request supervisor verification.</li>
+                    <li><strong>Supervisor:</strong> Allows you to view, audit, and sign off on cases submitted by your juniors/trainees.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="faq-item">
+            <span class="faq-question">2. Completing your Clinical Profile</span>
+            <div class="faq-answer">
+                <p>Go to the <strong>Profile</strong> tab to enter your Registration ID (PMDC, GMC, etc.), Hospital, and Department. This information is required for generating valid Portfolio PDFs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Logbook Workflow -->
+    <div class="section">
+        <h2>📋 The Logbook Workflow</h2>
+        <div class="faq-item">
+            <span class="faq-question">3. How do I add a new case efficiently?</span>
+            <div class="faq-answer">
+                <p>Tap the <strong>+ Add Case</strong> button on the home screen. MedLog Pro uses an intelligent categorization system:</p>
+                <ul class="step-list">
+                    <li><strong>Surgical Cases:</strong> Focuses on operative steps, duration, and findings.</li>
+                    <li><strong>Medical/Clinical Cases:</strong> Focuses on presentation, differential diagnosis, and management plans.</li>
+                    <li><strong>Research/Academic:</strong> For tracking presentations and publications.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="faq-item">
+            <span class="faq-question">4. Using the Template Engine</span>
+            <div class="faq-answer">
+                <p>Tired of typing "Laparoscopic Appendectomy" details every time? Navigate to <strong>More > Manage Templates</strong>. Create a template for common procedures, and the app will automatically pre-fill the Operative Steps and Post-op Plan whenever you select that diagnosis in a new case.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data & Cloud -->
+    <div class="section">
+        <h2>☁️ Data & Cloud Synchronization</h2>
+        <div class="faq-item">
+            <span class="badge badge-sync">Important</span>
+            <span class="faq-question">5. How does the Syncing work?</span>
+            <div class="faq-answer">
+                <p>MedLog Pro stores your data locally first to ensure it works in basements or operating theaters without Wi-Fi. To back up your data:</p>
+                <ol class="step-list">
+                    <li>Connect to the internet.</li>
+                    <li>Go to the <strong>More</strong> tab.</li>
+                    <li>Tap <strong>Upload Unsynced Data</strong>.</li>
+                </ol>
+                <p>A green checkmark will appear next to cases that have been successfully backed up to the secure cloud.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <span class="faq-question">6. Exporting to Excel / CSV</span>
+            <div class="faq-answer">
+                <p>Need your data for a specific institutional audit? Use the <strong>Import / Export (CSV)</strong> tool. The app will generate a structured spreadsheet containing every detail of your logs, including complication rates and supervisor names.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Media & Storage -->
+    <div class="section">
+        <h2>📸 Media & Storage</h2>
+        <div class="faq-item">
+            <span class="badge badge-pro">Pro Feature</span>
+            <span class="faq-question">7. Adding Photos and Videos</span>
+            <div class="faq-answer">
+                <p>You can attach clinical photos or short operative videos to any case. For patient privacy, we recommend avoiding identifiable facial features unless specific consent is documented.</p>
+                <p><strong>Note:</strong> Free users can attach 1 photo per case. To attach high-definition videos and multiple follow-up photos, an upgrade to the <strong>Standard</strong> or <strong>Pro</strong> tier is required.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Troubleshooting -->
+    <div class="section">
+        <h2>🛠️ Troubleshooting & Support</h2>
+        <div class="faq-item">
+            <span class="faq-question">8. I changed my phone. How do I get my data back?</span>
+            <div class="faq-answer">
+                <p>Simply log in with the same email address on your new device. Go to <strong>More > Thorough Restore from Cloud</strong>. The app will reconstruct your local database from your latest cloud backup.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <span class="faq-question">9. My Supervisor cannot see my cases.</span>
+            <div class="faq-answer">
+                <p>Ensure that:
+                    <ul class="step-list">
+                        <li>You have selected the correct supervisor from the dropdown during case entry.</li>
+                        <li>You have synced your cases (Upload to Cloud). Supervisors view cases from the cloud, not your local device.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" style="background-color: var(--secondary-color); color: white;">
+        <h2 style="color: white; border-color: rgba(255,255,255,0.2);">Still need assistance?</h2>
+        <p>Our clinical support team is led by surgeons who understand your workflow.</p>
+        <p><strong>Email:</strong> support@apexclinicaltools.com</p>
+        <p><strong>WhatsApp Support:</strong> +92 333 4505125</p>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2024 Apex Clinical Tools. All rights reserved. <br>
+    Designed for Doctors, by Doctors.
+</footer>
+
+</body>
+</html>
