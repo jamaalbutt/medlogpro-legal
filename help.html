@@ -225,7 +225,9 @@
         <a href="#logbook" class="anchor-link">Case Logging</a>
         <a href="#templates" class="anchor-link">Templates</a>
         <a href="#supervisor" class="anchor-link">Supervision</a>
+        <a href="#competency" class="anchor-link">Competency (EPA)</a>
         <a href="#analytics" class="anchor-link">Analytics</a>
+        <a href="#cme" class="anchor-link">CME Credits</a>
         <a href="#portfolio" class="anchor-link">Portfolio & Export</a>
         <a href="#cloud" class="anchor-link">Cloud & Security</a>
         <a href="#billing" class="anchor-link">Tiers</a>
@@ -303,6 +305,7 @@
             <div class="faq-answer">
                 <p>The verification loop ensures institutional validity:</p>
                 <ul class="step-list">
+                    <li><strong>Registration:</strong> If your supervisor isn't listed, they must register their own account with the <strong>'Supervisor'</strong> role first.</li>
                     <li><strong>Selection:</strong> During case entry, select your supervisor from the cloud-synced list.</li>
                     <li><strong>Sync:</strong> Once you upload your case to the cloud, it appears in your supervisor's "Pending Review" list.</li>
                     <li><strong>Review:</strong> The supervisor reviews your logs and media attachments.</li>
@@ -312,25 +315,214 @@
         </div>
     </div>
 
+    <!-- Competency Section -->
+    <div class="section" id="competency">
+        <h2>🎯 5. Curriculum & Competency Tracking</h2>
+        <div class="faq-item">
+            <span class="faq-question">Entrustable Professional Activities (EPAs) Framework</span>
+            <div class="faq-answer">
+                <p>This module tracks your progress against standard clinical milestones. You can choose between <strong>Surgical</strong> or <strong>Medical</strong> tracks to load relevant competencies for your training level.</p>
+                <ul class="step-list">
+                    <li><strong>Setup Wizard:</strong> When first opening the dashboard, use the wizard to select your track and set numeric targets for each EPA.</li>
+                    <li><strong>Progress Calculation:</strong> The app automatically links your logs to relevant competencies.
+                        <ul class="step-list">
+                            <li><em>Finalized:</em> Approved or finalized by a supervisor.</li>
+                            <li><em>Pending:</em> Submitted but awaiting review.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Status:</strong> Once finalized cases meet the target, the competency is marked as 'Met'.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- System Curriculum Directories -->
+        <div class="faq-item">
+            <span class="faq-question">📋 Standard Curriculum Directory & Codes</span>
+            <div class="faq-answer">
+                <p>MedLog Pro comes built-in with standard medical education portfolios. Use the references below to see the specific code dependencies integrated into your track:</p>
+                
+                <h3 style="margin-top: 15px; font-size: 15px; font-weight: bold; color: var(--secondary-color);">🩺 Medical Specialties (Internal Medicine, Pediatrics, ICU)</h3>
+                <table class="comparison-table" style="margin-top: 5px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">Code</th>
+                            <th style="width: 50%;">Competency / EPA Title</th>
+                            <th style="width: 35%;">Target Activity Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>MED-EPA1</strong></td>
+                            <td>Managing Acutely Ill/Resuscitative Patients</td>
+                            <td>Medical Case (ICU/ER Rounds)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MED-EPA2</strong></td>
+                            <td>Coordinating Comprehensive Care for Chronic Illness</td>
+                            <td>Medical Case (Outpatient/Ward)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MED-EPA3</strong></td>
+                            <td>Leading Interprofessional Discharge & Transitions of Care</td>
+                            <td>Medical Case (Handover logs)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MED-EPA4</strong></td>
+                            <td>Executing Diagnostic & Invasive Medical Procedures</td>
+                            <td>Medical Case (e.g., Central lines, LP)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 25px; font-size: 15px; font-weight: bold; color: var(--secondary-color);">🔪 Surgical Specialties (General Surgery, Orthopedics, OBGYN)</h3>
+                <table class="comparison-table" style="margin-top: 5px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">Code</th>
+                            <th style="width: 50%;">Competency / EPA Title</th>
+                            <th style="width: 35%;">Target Activity Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>SURG-EPA1</strong></td>
+                            <td>Providing Preoperative Evaluation & Optimization</td>
+                            <td>Medical/Surgical Case</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SURG-EPA2</strong></td>
+                            <td>Executing Fundamental Surgical Procedures (Uncomplicated)</td>
+                            <td>Surgical Case (Lead/Primary)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SURG-EPA3</strong></td>
+                            <td>Managing Complex Intraoperative Complications</td>
+                            <td>Surgical Case</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SURG-EPA4</strong></td>
+                            <td>Postoperative Care & Complication Management (Clavien-Dindo)</td>
+                            <td>Surgical Case (Audit/Registry)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 25px; font-size: 15px; font-weight: bold; color: var(--secondary-color);">📝 Academic & Research Portfolios (Cross-Disciplinary)</h3>
+                <table class="comparison-table" style="margin-top: 5px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">Code</th>
+                            <th style="width: 50%;">Competency / EPA Title</th>
+                            <th style="width: 35%;">Target Activity Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>ACAD-EPA1</strong></td>
+                            <td>Delivery of Peer-to-Peer Medical Education / Presentations</td>
+                            <td>Academic Activity</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ACAD-EPA2</strong></td>
+                            <td>Contribution to Clinical Research & Scientific Literature</td>
+                            <td>Academic Activity (Papers/Workshops)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Category-to-Competency Mapping Matrix -->
+        <div class="faq-item">
+            <span class="faq-question">🗺️ Category-to-Competency Mapping Matrix</span>
+            <div class="faq-answer">
+                <p>MedLog Pro automatically maps your logs to relevant competencies (EPAs) to streamline your portfolio growth:</p>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Log Category</th>
+                            <th>Linked Competencies</th>
+                            <th>Logic & Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Surgical Case</strong></td>
+                            <td>SURG-EPA2, 3, 4</td>
+                            <td>Feeds Operative Competency dashboard and Clavien-Dindo audit.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Medical Case</strong></td>
+                            <td>MED-EPA1, 2, CORE-PC</td>
+                            <td>Feeds Volume Trends for rounds, clinics, and ICU evaluations.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Procedure</strong></td>
+                            <td>MED-EPA4, SURG-EPA2</td>
+                            <td>Tracks specific volume targets for minor interventions.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Academic Activity</strong></td>
+                            <td>ACAD-EPA1, CORE-MK</td>
+                            <td>Contributes <strong>1.0 CME Credit Hour</strong> per log.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Research & Publication</strong></td>
+                            <td>ACAD-EPA2</td>
+                            <td>Populates the research hub in your Professional Portfolio.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Audit / QI</strong></td>
+                            <td>CORE-PBL, CORE-SBP</td>
+                            <td>Tracks safety audits vital for institutional appraisals.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Course & Cert</strong></td>
+                            <td>CORE-MK, CORE-PROF</td>
+                            <td>Contributes <strong>5.0 CME Credit Hours</strong> upon completion.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <!-- Analytics Section -->
     <div class="section" id="analytics">
-        <h2>📊 5. Analytics & Clinical Insights</h2>
+        <h2>📊 6. Analytics & Clinical Insights</h2>
         <div class="faq-item">
             <span class="faq-question">Data-Driven Career Growth</span>
             <div class="faq-answer">
-                <p>Our analytics engine (powered by the Vico Charting library) provides:</p>
+                <p>Our analytics engine provides deep insights based on your role:</p>
                 <ul class="step-list">
-                    <li><strong>Volume Metrics:</strong> Monthly trends of surgical activity.</li>
-                    <li><strong>Complexity Distribution:</strong> Visual breakdown of procedure categories.</li>
-                    <li><strong>Outcome Audits:</strong> Instant success-vs-complication ratios, vital for annual appraisals.</li>
+                    <li><strong>Residents:</strong> View operative competency, index procedure breakdowns, and monthly trends.</li>
+                    <li><strong>Supervisors:</strong> Monitor pending reviews, trainee counts, and overall approval rates.</li>
+                    <li><strong>AI Interpretation:</strong> Tap any chart to flip it and see an AI-generated interpretation of your data.</li>
+                    <li><strong>Advanced Metrics:</strong> Includes <em>Index Procedures</em> (high-stakes surgery progress) and <em>Tenure Analysis</em> (case volume within specific rotations).</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- CME Section -->
+    <div class="section" id="cme">
+        <h2>⏱️ 7. CME Credit Hours</h2>
+        <div class="faq-item">
+            <span class="faq-question">Automated Credit Calculation</span>
+            <div class="faq-answer">
+                <p>CME hours are automatically tallied from your approved professional activities:</p>
+                <ul class="step-list">
+                    <li><strong>Academic Activity:</strong> Presentations and Research count for 1.0 Credit Hour each.</li>
+                    <li><strong>Course & Certification:</strong> Workshops and Training count for 5.0 Credit Hours each.</li>
+                </ul>
+                <p><em>Note: Only 'Approved' or 'Finalized' entries are counted towards your CME total.</em></p>
             </div>
         </div>
     </div>
 
     <!-- Portfolio Section -->
     <div class="section" id="portfolio">
-        <h2>📂 6. Professional Portfolio & Exports</h2>
+        <h2>📂 8. Professional Portfolio & Exports</h2>
         <div class="faq-item">
             <span class="faq-question">Generating Audit-Ready Records</span>
             <div class="faq-answer">
@@ -345,7 +537,7 @@
 
     <!-- Cloud & Security Section -->
     <div class="section" id="cloud">
-        <h2>☁️ 7. Cloud Architecture & Data Sovereignty</h2>
+        <h2>☁️ 9. Cloud Architecture & Data Sovereignty</h2>
         <div class="faq-item">
             <span class="badge badge-sync">Sync Engine</span>
             <span class="faq-question">Offline-First Design</span>
@@ -363,7 +555,7 @@
 
     <!-- Billing Section -->
     <div class="section" id="billing">
-        <h2>💎 8. Subscription Tiers & Quotas</h2>
+        <h2>💎 10. Subscription Tiers & Quotas</h2>
         <table class="comparison-table">
             <thead>
                 <tr>
