@@ -274,6 +274,16 @@
             </div>
         </div>
         <div class="faq-item" style="margin-top: 20px;">
+            <span class="faq-question">Smart Case Numbering & Uniqueness</span>
+            <div class="faq-answer">
+                <p>Every clinical entry is assigned a unique, auto-incrementing <strong>Case Number</strong> to ensure audit compliance. The system generates these IDs based on the activity type and the calendar year:</p>
+                <ul class="step-list">
+                    <li><strong>Format:</strong> <code>[PREFIX]-[6-DIGIT NUMBER]-[YEAR]</code> (e.g., <code>SURG-000042-2024</code>).</li>
+                    <li><strong>Logic:</strong> When you start a new entry, the app calculates the next available number by counting your existing logs for that year. It then performs a real-time uniqueness check against the database to prevent any duplicates.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="faq-item" style="margin-top: 20px;">
             <span class="faq-question">What is the "Clavien-Dindo" classification?</span>
             <div class="faq-answer">
                 <p>We integrate the international standard for grading surgical complications. When logging a case outcome, you can select Grades I through V to maintain an audit-ready complications register.</p>
@@ -300,6 +310,19 @@
     <!-- Supervisor Section -->
     <div class="section" id="supervisor">
         <h2>🤝 4. Supervisor Verification Workflow</h2>
+        <div class="faq-item">
+            <span class="faq-question">The Case Lifecycle & Status Tracking</span>
+            <div class="faq-answer">
+                <p>MedLog Pro tracks the "Trust Level" of every log through a formal communication lifecycle:</p>
+                <ul class="step-list">
+                    <li><strong>Draft (Grey):</strong> Locally saved on your device. Only you can see this. Use this to record details quickly during rounds and finalize them later.</li>
+                    <li><strong>Submitted (Yellow):</strong> Uploaded to the cloud. Your selected supervisor can now see this in their "Pending Review" list. The log is locked for editing to ensure data integrity.</li>
+                    <li><strong>Approved / Finalized (Green):</strong> Verified by your supervisor. These cases are officially added to your logbook and contribute toward your <strong>Competency (EPA)</strong> targets and <strong>CME credits</strong>.</li>
+                    <li><strong>Sent Back (Orange):</strong> Your supervisor has requested changes. You will receive their feedback, and the log is unlocked so you can edit and resubmit it.</li>
+                    <li><strong>Rejected (Red):</strong> Denied by the supervisor. These entries are archived but do not count toward training milestones or volume requirements.</li>
+                </ul>
+            </div>
+        </div>
         <div class="faq-item">
             <span class="faq-question">Digital Sign-off Ecosystem</span>
             <div class="faq-answer">
@@ -340,93 +363,93 @@
             <span class="faq-question">📋 Standard Curriculum Directory & Codes</span>
             <div class="faq-answer">
                 <p>MedLog Pro comes built-in with standard medical education portfolios. Use the references below to see the specific code dependencies integrated into your track:</p>
-                
+
                 <h3 style="margin-top: 15px; font-size: 15px; font-weight: bold; color: var(--secondary-color);">🩺 Medical Specialties (Internal Medicine, Pediatrics, ICU)</h3>
                 <table class="comparison-table" style="margin-top: 5px;">
                     <thead>
-                        <tr>
-                            <th style="width: 15%;">Code</th>
-                            <th style="width: 50%;">Competency / EPA Title</th>
-                            <th style="width: 35%;">Target Activity Type</th>
-                        </tr>
+                    <tr>
+                        <th style="width: 15%;">Code</th>
+                        <th style="width: 50%;">Competency / EPA Title</th>
+                        <th style="width: 35%;">Target Activity Type</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><strong>MED-EPA1</strong></td>
-                            <td>Managing Acutely Ill/Resuscitative Patients</td>
-                            <td>Medical Case (ICU/ER Rounds)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>MED-EPA2</strong></td>
-                            <td>Coordinating Comprehensive Care for Chronic Illness</td>
-                            <td>Medical Case (Outpatient/Ward)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>MED-EPA3</strong></td>
-                            <td>Leading Interprofessional Discharge & Transitions of Care</td>
-                            <td>Medical Case (Handover logs)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>MED-EPA4</strong></td>
-                            <td>Executing Diagnostic & Invasive Medical Procedures</td>
-                            <td>Medical Case (e.g., Central lines, LP)</td>
-                        </tr>
+                    <tr>
+                        <td><strong>MED-EPA1</strong></td>
+                        <td>Managing Acutely Ill/Resuscitative Patients</td>
+                        <td>Medical Case (ICU/ER Rounds)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MED-EPA2</strong></td>
+                        <td>Coordinating Comprehensive Care for Chronic Illness</td>
+                        <td>Medical Case (Outpatient/Ward)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MED-EPA3</strong></td>
+                        <td>Leading Interprofessional Discharge & Transitions of Care</td>
+                        <td>Medical Case (Handover logs)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MED-EPA4</strong></td>
+                        <td>Executing Diagnostic & Invasive Medical Procedures</td>
+                        <td>Medical Case (e.g., Central lines, LP)</td>
+                    </tr>
                     </tbody>
                 </table>
 
                 <h3 style="margin-top: 25px; font-size: 15px; font-weight: bold; color: var(--secondary-color);">🔪 Surgical Specialties (General Surgery, Orthopedics, OBGYN)</h3>
                 <table class="comparison-table" style="margin-top: 5px;">
                     <thead>
-                        <tr>
-                            <th style="width: 15%;">Code</th>
-                            <th style="width: 50%;">Competency / EPA Title</th>
-                            <th style="width: 35%;">Target Activity Type</th>
-                        </tr>
+                    <tr>
+                        <th style="width: 15%;">Code</th>
+                        <th style="width: 50%;">Competency / EPA Title</th>
+                        <th style="width: 35%;">Target Activity Type</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><strong>SURG-EPA1</strong></td>
-                            <td>Providing Preoperative Evaluation & Optimization</td>
-                            <td>Medical/Surgical Case</td>
-                        </tr>
-                        <tr>
-                            <td><strong>SURG-EPA2</strong></td>
-                            <td>Executing Fundamental Surgical Procedures (Uncomplicated)</td>
-                            <td>Surgical Case (Lead/Primary)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>SURG-EPA3</strong></td>
-                            <td>Managing Complex Intraoperative Complications</td>
-                            <td>Surgical Case</td>
-                        </tr>
-                        <tr>
-                            <td><strong>SURG-EPA4</strong></td>
-                            <td>Postoperative Care & Complication Management (Clavien-Dindo)</td>
-                            <td>Surgical Case (Audit/Registry)</td>
-                        </tr>
+                    <tr>
+                        <td><strong>SURG-EPA1</strong></td>
+                        <td>Providing Preoperative Evaluation & Optimization</td>
+                        <td>Medical/Surgical Case</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SURG-EPA2</strong></td>
+                        <td>Executing Fundamental Surgical Procedures (Uncomplicated)</td>
+                        <td>Surgical Case (Lead/Primary)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SURG-EPA3</strong></td>
+                        <td>Managing Complex Intraoperative Complications</td>
+                        <td>Surgical Case</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SURG-EPA4</strong></td>
+                        <td>Postoperative Care & Complication Management (Clavien-Dindo)</td>
+                        <td>Surgical Case (Audit/Registry)</td>
+                    </tr>
                     </tbody>
                 </table>
 
                 <h3 style="margin-top: 25px; font-size: 15px; font-weight: bold; color: var(--secondary-color);">📝 Academic & Research Portfolios (Cross-Disciplinary)</h3>
                 <table class="comparison-table" style="margin-top: 5px;">
                     <thead>
-                        <tr>
-                            <th style="width: 15%;">Code</th>
-                            <th style="width: 50%;">Competency / EPA Title</th>
-                            <th style="width: 35%;">Target Activity Type</th>
-                        </tr>
+                    <tr>
+                        <th style="width: 15%;">Code</th>
+                        <th style="width: 50%;">Competency / EPA Title</th>
+                        <th style="width: 35%;">Target Activity Type</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><strong>ACAD-EPA1</strong></td>
-                            <td>Delivery of Peer-to-Peer Medical Education / Presentations</td>
-                            <td>Academic Activity</td>
-                        </tr>
-                        <tr>
-                            <td><strong>ACAD-EPA2</strong></td>
-                            <td>Contribution to Clinical Research & Scientific Literature</td>
-                            <td>Academic Activity (Papers/Workshops)</td>
-                        </tr>
+                    <tr>
+                        <td><strong>ACAD-EPA1</strong></td>
+                        <td>Delivery of Peer-to-Peer Medical Education / Presentations</td>
+                        <td>Academic Activity</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ACAD-EPA2</strong></td>
+                        <td>Contribution to Clinical Research & Scientific Literature</td>
+                        <td>Academic Activity (Papers/Workshops)</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -439,48 +462,48 @@
                 <p>MedLog Pro automatically maps your logs to relevant competencies (EPAs) to streamline your portfolio growth:</p>
                 <table class="comparison-table">
                     <thead>
-                        <tr>
-                            <th>Log Category</th>
-                            <th>Linked Competencies</th>
-                            <th>Logic & Impact</th>
-                        </tr>
+                    <tr>
+                        <th>Log Category</th>
+                        <th>Linked Competencies</th>
+                        <th>Logic & Impact</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><strong>Surgical Case</strong></td>
-                            <td>SURG-EPA2, 3, 4</td>
-                            <td>Feeds Operative Competency dashboard and Clavien-Dindo audit.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Medical Case</strong></td>
-                            <td>MED-EPA1, 2, CORE-PC</td>
-                            <td>Feeds Volume Trends for rounds, clinics, and ICU evaluations.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Procedure</strong></td>
-                            <td>MED-EPA4, SURG-EPA2</td>
-                            <td>Tracks specific volume targets for minor interventions.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Academic Activity</strong></td>
-                            <td>ACAD-EPA1, CORE-MK</td>
-                            <td>Contributes <strong>1.0 CME Credit Hour</strong> per log.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Research & Publication</strong></td>
-                            <td>ACAD-EPA2</td>
-                            <td>Populates the research hub in your Professional Portfolio.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Audit / QI</strong></td>
-                            <td>CORE-PBL, CORE-SBP</td>
-                            <td>Tracks safety audits vital for institutional appraisals.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Course & Cert</strong></td>
-                            <td>CORE-MK, CORE-PROF</td>
-                            <td>Contributes <strong>5.0 CME Credit Hours</strong> upon completion.</td>
-                        </tr>
+                    <tr>
+                        <td><strong>Surgical Case</strong></td>
+                        <td>SURG-EPA2, 3, 4</td>
+                        <td>Feeds Operative Competency dashboard and Clavien-Dindo audit.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Medical Case</strong></td>
+                        <td>MED-EPA1, 2, CORE-PC</td>
+                        <td>Feeds Volume Trends for rounds, clinics, and ICU evaluations.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Procedure</strong></td>
+                        <td>MED-EPA4, SURG-EPA2</td>
+                        <td>Tracks specific volume targets for minor interventions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Academic Activity</strong></td>
+                        <td>ACAD-EPA1, CORE-MK</td>
+                        <td>Contributes <strong>1.0 CME Credit Hour</strong> per log.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Research & Publication</strong></td>
+                        <td>ACAD-EPA2</td>
+                        <td>Populates the research hub in your Professional Portfolio.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Audit / QI</strong></td>
+                        <td>CORE-PBL, CORE-SBP</td>
+                        <td>Tracks safety audits vital for institutional appraisals.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Course & Cert</strong></td>
+                        <td>CORE-MK, CORE-PROF</td>
+                        <td>Contributes <strong>5.0 CME Credit Hours</strong> upon completion.</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -558,38 +581,38 @@
         <h2>💎 10. Subscription Tiers & Quotas</h2>
         <table class="comparison-table">
             <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>Free Tier</th>
-                    <th>Standard</th>
-                    <th class="pro-highlight">Pro (Recommended)</th>
-                </tr>
+            <tr>
+                <th>Feature</th>
+                <th>Free Tier</th>
+                <th>Standard</th>
+                <th class="pro-highlight">Pro (Recommended)</th>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Monthly Case Limit</td>
-                    <td>15 Cases</td>
-                    <td>30 Cases</td>
-                    <td class="pro-highlight">Unlimited</td>
-                </tr>
-                <tr>
-                    <td>Media Storage (Photos)</td>
-                    <td>1 per case</td>
-                    <td>3 per case</td>
-                    <td class="pro-highlight">5 per case</td>
-                </tr>
-                <tr>
-                    <td>Video Attachments</td>
-                    <td>None</td>
-                    <td>1 Short Clip</td>
-                    <td class="pro-highlight">2 HD Clips</td>
-                </tr>
-                <tr>
-                    <td>Portfolio Export</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td class="pro-highlight">Yes + Priority Support</td>
-                </tr>
+            <tr>
+                <td>Monthly Case Limit</td>
+                <td>15 Cases</td>
+                <td>30 Cases</td>
+                <td class="pro-highlight">Unlimited</td>
+            </tr>
+            <tr>
+                <td>Media Storage (Photos)</td>
+                <td>1 per case</td>
+                <td>3 per case</td>
+                <td class="pro-highlight">5 per case</td>
+            </tr>
+            <tr>
+                <td>Video Attachments</td>
+                <td>None</td>
+                <td>1 Short Clip</td>
+                <td class="pro-highlight">2 HD Clips</td>
+            </tr>
+            <tr>
+                <td>Portfolio Export</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td class="pro-highlight">Yes + Priority Support</td>
+            </tr>
             </tbody>
         </table>
     </div>
